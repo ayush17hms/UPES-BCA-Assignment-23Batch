@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function Converter() {
+    var inp = document.getElementById("Fahr").value;
+        inp = parseFloat(inp);
+    celcius = ((inp-32)/1.8).toFixed(3);
+    document.getElementById("Cel").value=celcius;
+  }
+  function Converter2(){
+    var inp = document.getElementById("Cel").value;
+      inp =parseFloat(inp);
+      fahr=((inp*1.8)+32).toFixed(3);
+      document.getElementById("Fahr").value=fahr;
+  }
+  </script>
+
+  <h1>Temperature Converter</h1>
+  
+  <p>
+    <label>Fahrenheit</label>
+    <input id="Fahr" type="number" placeholder="Fahrenheit" oninput="Converter()" onchange="Converter()">
+  </p>
+  <p>
+    <label>Celcius</label>
+    <input id="Cel" type="number" placeholder="Celcius" oninput="Converter2()" onchange="Converter2()">
+  </p>
+  
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family:serif;
+
+        }
+        .no1 {
+            background-color: rgb(124, 124, 124);
+            width: 25%;
+            padding: 10px 20px;
+            zoom: 130%;
+        }
+
+        .no1 p {
+            zoom: 200%;
+            padding: 20px 20px;
+        }
+
+        .no1 button {
+            background-color: rgb(250, 246, 246);
+            border: none;
+            color: rgb(8, 8, 11);
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .no1 button:hover {
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        function up(){
+            var a = Math.floor(Math.random() * (100 - 1) ) + 1;
+            if(a%2==0){
+                document.getElementById("val").innerHTML= "H";
+            }
+            else{
+                document.getElementById("val").innerHTML= "T";
+            }
+        }
+        function down(){
+            var a = Math.floor(Math.random() * (7 - 1) ) + 1;
+            document.getElementById("val").innerHTML= a;
+        }
+    </script>
+
+    <div class="no1">
+        <h1>Game OF Luck</h1>
+        <p id="val">0</p>
+        <div class="ba">
+            <button class="b" type="button" onclick="up()">Coin</button>
+
+            <button class="b" type="button" onclick="down()">Dice</button>
+
+            <button class="b" type="button" onclick="document.getElementById('val').innerHTML= 0;">Reset</button>
+        </div>
+    </div>
+
+</body>
+</html>

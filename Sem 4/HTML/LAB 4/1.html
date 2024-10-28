@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 20px;
+            zoom: 125%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form action="backend.php">
+        <div>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname">
+        </div>
+
+        <div>
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" name="lname">
+        </div>
+
+        <div>
+            <label for="mid">Mail Id :</label>
+            <input type="text" name="mid" id="mid">
+        </div>
+
+        <div>
+            <label for="bday">Birthday :</label>
+            <input type="date" name="bd" id="bd" value="2000-12-11">
+        </div>
+        
+        <div>
+            <label for="fav_language" >Choose From your favorite Front-end Web Language:</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+            <label for="back-end">Choose your Favourite Back-end Web language:</label>
+            <select name="back-end" id="back-end">
+                <option value="Python">Python</option>
+                <option value="java">Java</option>
+                <option value=".net">.Net</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Fc">Select your Favourite color :</label>
+            <input type="color" name="Fc" id="Fc" value="#ff0000">
+        </div>
+
+        <div>
+            <label for="file">Select a File:</label>
+            <input type="file" name="file" id="file" > 
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <div>
+        <p>Vedio:</p>
+        <video width="320" height="240" controls>
+
+            <source src="movie.mp4" type="video/mp4">
+          
+        </video>
+    </div>
+
+    <div>
+        <p>Audio:</p>
+        <audio controls>
+            <source src="audio.wav" type="audio/wav">
+        </audio>
+    </div>
+</body>
+</html>

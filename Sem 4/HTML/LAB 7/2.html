@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Click the button to alert the innerHTML of the first cell (td element with index 0) in the table's first row.</p>
+
+    <table id="myTable">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+            <td>Row1 cell3</td>
+            <td>Row1 cell4</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+            <td>Row2 cell3</td>
+            <td>Row2 cell4</td>
+        </tr>
+        <tr>
+            <td>Row3 cell1</td>
+            <td>Row3 cell2</td>
+            <td>Row3 cell3</td>
+            <td>Row3 cell4</td>
+        </tr>
+        <tr>
+            <td>Row4 cell1</td>
+            <td>Row4 cell2</td>
+            <td>Row4 cell3</td>
+            <td>Row4 cell4</td>
+        </tr>
+        <tr>
+            <td>Row5 cell1</td>
+            <td>Row5 cell2</td>
+            <td>Row5 cell3</td>
+            <td>Row5 cell4</td>
+        </tr>
+        <tr>
+            <td>Row6 cell1</td>
+            <td>Row6 cell2</td>
+            <td>Row6 cell3</td>
+            <td>Row6 cell4</td>
+        </tr>
+    </table>
+    <br>
+
+    <button onclick="myFunction()">Edit String</button>
+
+    <script>
+        function myFunction() {
+            var r = prompt("Row :-", 0) - 1;
+            var c = prompt("Column:-", 0) - 1;
+            try {
+                var x = document.getElementById("myTable").rows[r].cells[c].innerHTML;
+            }
+            catch (err) {
+                alert("Wrong Values");
+            }
+
+            alert("String of the row " + (r + 1) + " & Column " + (c + 1) + " is " + document.getElementById("myTable").rows[r].cells[c].innerHTML);
+            var st = prompt("Enter the String", "Change")
+
+            document.getElementById("myTable").rows[r].cells[c].innerHTML = st;
+            alert("String changed");
+            // if (document.getElementById("tb").rows[r].cells[c])
+        }
+    </script>
+
+</body>
+
+</html>

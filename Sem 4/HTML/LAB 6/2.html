@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .no1 {
+            background-color: rgb(82, 161, 206);
+            width: 25%;
+            padding: 10px 20px;
+            zoom: 130%;
+        }
+
+        .no1 p {
+            zoom: 200%;
+            padding: 20px 20px;
+        }
+
+        .no1 button {
+            background-color: gray;
+            border: none;
+            color: blue;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .no1 button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function up(){
+            document.getElementById("val").innerHTML= parseInt(document.getElementById("val").innerHTML)+1;
+        }
+        function down(){
+            document.getElementById("val").innerHTML= parseInt(document.getElementById("val").innerHTML)-1;
+        }
+        function reset(){
+            document.getElementById("val").innerHTML= 0;
+        }
+
+    </script>
+    <div class="no1">
+        <p> Click counter</p>
+        <p id="val">0</p>
+        <div class="ba">
+            <button class="b" type="button" onclick="up()">Up</button>
+
+            <button class="b" type="button" onclick="down()">Down</button>
+
+            <button class="b" type="button" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>

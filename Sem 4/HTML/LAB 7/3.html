@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 10px;
+            margin: 10px;
+        }
+        label,input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function vol() {
+            // alert("vol");
+            var radius = document.getElementById("radius").value;
+            var volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+            var volume=volume.toFixed();
+            document.getElementById("volume").value = volume;
+            return false;
+        }
+        function myname(){
+            document.getElementById('form').onsubmit=vol;
+            // alert("my name")
+        }
+        window.onload=myname;
+    </script>
+
+
+    <div>
+        <h2>Input radius value to get the volume.</h2>
+        <form  id="form">
+           <label for="rad">Radius</label><input type="text" name="radius" id="radius">
+           <label for="Volume">Volume</label> <input type="text" name="volume" id="volume">
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

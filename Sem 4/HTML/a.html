@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+.pseudo{ background-color: blue; text-align: center; color: white;padding: 5px;
+}
+.pseudo:hover{
+ background-color: green;
+}
+p i:first-child {
+  color: blue;
+} 
+.abc p:first-child b
+ { color: blue;
+}
+
+.p1::first-letter  { 
+    color: #ff0000; 
+    font-size: xx-large;
+}
+.p1::first-line  { 
+    color:blue;  
+}
+</style>
+</head>
+<body>
+    <h1><Pseudo-Classes></h1>
+        <div class="pseudo">
+            <p>Mouse over me</p>
+
+        </div>
+
+<p>I am a <i>strong</i> persion. I am a <i>strong</i> persion</p>
+<p>I am a <i>strong</i> persion. I am a <i>strong</i> persion</p>
+
+<div class="abc">
+    <p>I am a <b>strong</b> person. I am a <b>strong</b> person.<p>
+    <p>I am a <b>strong</b> person. I am a <b>strong</b> person.<p>
+    </div>
+<div class="p1">
+    <p>You can combine the ::First -Line Pseudo-Element to ADD a special effects to<br>
+    the first letter and the first line of the text!
+    </p>
+</div>
+</body>
+</html>

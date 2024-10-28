@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function aler() {
+            alert("I am an alert box!");
+        }
+
+        function cb() {
+            if (confirm("Press a button!")) {
+                document.getElementById("pera").innerHTML = "You pressed OK!";
+
+            } else {
+                document.getElementById("pera").innerHTML = "You pressed Cancel!";
+
+            }
+
+        }
+
+        function Pm() {
+
+            let person = prompt("Please enter your name:", "");
+            if (person == null || person == "") {
+
+                document.getElementById("pera2").innerHTML = "User cancelled the prompt.";
+
+            } else {
+
+                document.getElementById("pera2").innerHTML = "Hello " + person + "! How are you today?";
+
+            }
+
+        }
+
+        
+
+
+    </script>
+
+
+    <h1>JavaScript alert</h1>
+    <button type="button" onclick="aler()"> Try It</button>
+
+    <h1>JavaScript Confirm Box</h1>
+    <button type="button" onclick="cb()">Try It</button>
+    <p id="pera"></p>
+    
+    <h1>JavaScript Prompt</h1>
+    <button type="button" onclick="Pm()">Try It</button>
+    <p id="pera2"></p>
+</body>
+
+</html>

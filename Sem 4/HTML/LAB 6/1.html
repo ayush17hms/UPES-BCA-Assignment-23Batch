@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px 0px;
+            background-color: grey;
+            zoom: 140%;
+            font-size: xx-large;
+        }
+
+        .ba {
+            float: left;
+            background-color: lightgray;
+            padding: 90px 33px;
+            width: 25%;
+        }
+
+        .ba button {
+            background-color: rgb(211, 211, 211);
+            border: 1px solid;
+            padding: 10px 25px;
+            width: 30% !important;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .para {
+            float: right;
+            width: 65%;
+            background-color: rgb(250, 248, 248);
+            padding: 79px 30px;
+            zoom: 140%;
+        }
+
+        #num2,
+        #num3 {
+            display: none;
+            
+        }
+
+        .ti {
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .foot {
+            text-align: center;
+            padding: 50px 0px;
+            background-color: grey;
+            zoom: 140%;
+            font-size: xx-large;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function number1() {
+            document.getElementById("num1").style.display = "block";
+            document.getElementById("num2").style.display = "none";
+            document.getElementById("num3").style.display = "none";
+        }
+        function number2() {
+            document.getElementById("num1").style.display = "none";
+            document.getElementById("num2").style.display = "block";
+            document.getElementById("num3").style.display = "none";
+        }
+        function number3() {
+            document.getElementById("num1").style.display = "none";
+            document.getElementById("num2").style.display = "none";
+            document.getElementById("num3").style.display = "block";
+        }
+
+    </script>
+
+    <h1>Cities</h1>
+    <div class="ba">
+        <button class="b" type="button" onclick="number1()">London</button>
+
+        <button class="b" type="button" onclick="number2()">Paris</button>
+
+        <button class="b" type="button" onclick="number3()">Tokyo</button>
+    </div>
+
+
+    <div class="para">
+        <div id="num1">
+            <p class="ti">London</p>
+            London is the capital city of England. It is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.
+        </div>
+        <div id="num2">
+            <p class="ti">Paris</p>
+            Paris is the capital city of England. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dicta sunt molestias exercitationem amet nobis provident .
+        </div>
+        <div id="num3">
+            <p class="ti">Tokyo</p>
+            Tokyo is the capital city of Japan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate earum eveniet dignissimos quisquam similique repellendus incidunt.</
+        </div>
+    </div>
+
+    <footer class="foot">
+        <p> ....</p>
+    </footer>
+
+</body>
+
+</html>

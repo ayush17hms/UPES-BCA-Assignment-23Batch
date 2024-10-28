@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=0;
+        function up(){
+            var inp = prompt("Input string");
+            document.getElementById("val").innerHTML= inp;
+        }
+
+        function down(val){
+            const myArray = val.split("+");
+            var sum=0;
+            for( i = 0 ; i<myArray.length;i++){
+                sum+=parseInt(myArray[i]);   
+            }
+            document.getElementById("val2").innerHTML= sum;
+
+        }
+    </script>
+    <p id="val">0</p>
+    <p id="val2">Solution</p>
+
+    <button class="b" type="button" onclick="up()">Input</button>
+
+    <button class="b" type="button" onclick="down(val.innerHTML)">Solve</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function validateForm() {
+
+            let x = document.forms["myForm"]["myName"].value;
+            let y = document.forms["myForm"]["email"].value;
+            let z = document.forms["myForm"]["roll"].value;
+            
+
+            if (x == "") {
+
+                alert("Name must be filled out");
+
+                return false;
+
+            }
+            if (y == "") {
+
+                alert("Email must be filled out");
+
+                return false;
+
+            }
+            if (z == "") {
+
+                alert("Roll must be filled out");
+
+                return false;
+
+            }
+
+        }
+
+    </script>
+
+    <form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="post">
+        <div>
+            Name : <input type="text" name="myName" id="">
+        </div>
+        <br>
+        <div>
+            email: <input type="text" name="email" id="">
+        </div>
+        <br>
+        <div>
+            Roll : <input type="number" name="roll" id="">
+        </div>
+        <br>
+
+        <input type="submit" value="Submit now" onclick="validateForm()">
+
+    </form>
+
+
+
+
+</body>
+
+</html>

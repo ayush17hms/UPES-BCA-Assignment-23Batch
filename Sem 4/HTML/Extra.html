@@ -1,0 +1,156 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myTable{
+            width: 100%;
+            border: 1px solid black;
+
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <table id="myTable">
+
+        <tr>
+            <td> <img src="https://media.wiley.com/product_data/coverImage300/63/07645498/0764549863.jpg" alt="" width="150px" height="150px"> </td>
+            <td>Book: XML Bible</td>
+            <td>$40.5</td>
+            <td> <img src="https://t3.ftcdn.net/jpg/00/30/86/44/360_F_30864441_VgkpITeuRhgBfOcSxkCpLEuooEs100yL.jpg" alt="" width="150px" height="150px"></td>
+        </tr>
+        <tr>
+            <td> <img src="https://rukminim2.flixcart.com/image/416/416/kbl4cy80/regionalbooks/p/x/q/a-textbook-artificial-intelligence-for-class-10-subject-code-417-original-imafswmque6rdzhv.jpeg?q=70" alt="" width="150px" height="150px"> </td>
+            <td>Book: AI</td>
+            <td>$63</td>
+            <td> <img src="https://t3.ftcdn.net/jpg/00/30/86/44/360_F_30864441_VgkpITeuRhgBfOcSxkCpLEuooEs100yL.jpg" alt="" width="150px" height="150px"></td>
+        </tr>
+        <tr>
+            <td> <img src="https://images-na.ssl-images-amazon.com/images/I/71jYU3e7QJL.jpg" alt="" width="150px" height="150px"> </td>
+            <td>Book: Java 2</td>
+            <td>$35.5</td>
+            <td> <img src="https://t3.ftcdn.net/jpg/00/30/86/44/360_F_30864441_VgkpITeuRhgBfOcSxkCpLEuooEs100yL.jpg" alt="" width="150px" height="150px"></td>
+        </tr>
+        <tr>
+            <td> <img src="https://images-eu.ssl-images-amazon.com/images/I/51hdK2vXTVL._SY445_SX342_QL70_ML2_.jpg" alt="" width="150px" height="150px"> </td>
+            <td>Book: HTML in 24 hours</td>
+            <td>$100</td>
+            <td> <img src="https://t3.ftcdn.net/jpg/00/30/86/44/360_F_30864441_VgkpITeuRhgBfOcSxkCpLEuooEs100yL.jpg" alt="" width="150px" height="150px"></td>
+        </tr>
+        
+
+    </table>
+    
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+	<script>
+		function solve(){
+            let s = document.forms["form"]["string"].value;
+            alert("ayush");
+			const numArray = s.split("+");
+            var sum=0;
+            for( i=0; i<numArray.length; i++){
+                sum+=parseInt(numArray[i]);   
+            }
+            document.getElementById("displaySum").innerHTML = sum;
+		}
+    </script>
+</head>
+<body>
+   <form>
+	   <label>Enter a string: </label>
+	   <input type="text" id="string" placeholder="3+4+5">
+
+	   <input type="submit" value="SUBMIT" onclick="solve()">
+   </form>
+   <span>The sum of numbers is: </span>
+   <span id="displaySum"></span>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+    <style>
+        div{
+            margin: 20px;
+            height: 150px;
+            padding: 20px;
+            width: 350px;
+            font-size: 22px;
+        }
+        
+        #div1{
+            background-color: bisque;
+            border: 2px dashed brown;
+        }
+
+        #div2{
+            background-color: azure;
+            border: 2px dashed darkblue;
+        }
+    </style>
+
+    <script>
+
+        function CtoF(value) {
+            // let value = document.forms["form"]["inputCelcius"].value;
+            var f = ((value * 1.8) + 32).toFixed(3);
+            document.forms["form"]["outputFahrenheit"].value = f;
+
+        }
+
+        function FtoC(value) {
+            // let value = document.forms["form"]["inputFahrenheit"].value;
+            var c = ((value - 32) / 1.8).toFixed(3); 
+            document.forms["form"]["outputCelcius"].value = c;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Celcius to Fahrenheit</h2>
+        <form>
+            <label>enter Celcius: </label>
+            <input type="number" id="inputCelcius" oninput="CtoF(this.value)" onchange="CtoF()"><br>
+
+            <label>in Fahrenheits: </label>
+            <input type="number" id="outputFahrenheit">
+        </form>
+    </div>
+    <div id="div2">
+        <h2>Fahrenheit to Celcius</h2>
+        <form>
+            <label>enter Fahrenheits: </label>
+            <input type="number" id="inputFahrenheit" oninput="FtoC()" onchange="FtoC()"><br>
+
+            <label>in Celcius: </label>
+            <input type="number" id="outputCelcius">
+        </form>
+    </div>
+</body>
+
+</html>

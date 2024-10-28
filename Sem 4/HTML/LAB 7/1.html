@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            zoom: 130%;
+            margin: 50px;
+        }
+
+        form input {
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+
+        function newone() {
+            var row = prompt("Please enter the rows", 1);
+            var col = prompt("Please enter the columns:", 1);
+            var tb = document.createElement("TABLE");
+            tb.setAttribute("id", "myTable");
+            document.body.appendChild(tb);
+            tb.style.border = "5px solid blue";
+
+            for (var i = 0; i < row; i++) {
+                var x = tb.insertRow(i);
+                for (var j = 0; j < col; j++) {
+                    // col = alert("Please enter the columns:");
+                    var y = x.insertCell(j);
+                    y.innerHTML = "Row-" + i + " Columns-" + j;
+                    y.style.border = "5px red solid";
+                    y.style.color = "blue";
+
+                }
+
+            }
+        }
+    </script>
+
+    <form>
+        <input type="button" onclick="newone()" value="Create the table">
+    </form>
+
+    
+    
+</body>
+
+</html>

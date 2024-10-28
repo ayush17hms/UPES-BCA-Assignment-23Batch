@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        p{
+            width: 250px;
+            height: 65px; 
+            border: 2px solid;
+        }
+
+        .div1 p{
+            background-color: powderblue;
+            Overflow: visible !important;
+
+        }
+        .div2 p{
+            background-color: lightgreen;
+            overflow: hidden !important;
+        }
+
+        .div3 p{
+            background-color: lightcoral;
+            overflow: scroll !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h2>Overflow : visible</h2>
+        By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:
+        <p>
+            background-color: powderblue;<br>
+            width: 250px;<br>
+            height: 65px; <br>
+            border: 2px solid;<br>
+            Overflow: visible; <br>
+        </p>
+    </div>
+
+    <div class="div2">
+        <h2>Overflow: hidden</h2>
+        with the hidden value, the overflow is clipped, and the content is hidden:
+        <p>
+            you can use the overflow property when you want to have better control of the layout. The overflow property
+            specifies what happens if content.
+        </p>
+    </div>
+
+    <div class="div3">
+        <h2>Overflow: scroll</h2>
+        Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box.
+        <p>
+            You can use the overflow property when you want to have better control of the layout. The overflow property
+            specifies what happens if content.You can use the overflow property when you want to have better control of the layout. The overflow property
+            specifies what happens if content.
+        </p>
+    </div>
+
+</body>
+
+</html>

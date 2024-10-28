@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var marks;
+        window.onload = get_items();
+        function get_items() {
+            marks = document.getElementsByTagName("b");
+            // alert(marks.length);
+        }
+        function highlight() {
+            for (var i = 0; i < marks.length; i++) {
+                marks[i].style.backgroundColor = "yellow";
+                marks[i].style.color = "green";
+            }
+        }
+        function return_normal() {
+            for (var i = 0; i < marks.length; i++) {
+                marks[i].style.color = "black";
+            }
+        }
+
+    </script>
+
+
+    <div>[<a href="#" onMouseOver="highlight()" onMouseOut="return_normal()">On mouse over here bold words of the
+            following paragraph will be highlighted</a>]</div>
+    <div>
+        <b>We</b> have just started <b>this</b> section for the users ( <b>beginner</b> to
+        intermediate) who <b>want</b> to work with <b>various</b> JavaScript <b>problems
+        </b> and write scripts online to <b>test</b> their JavaScript <b>skill</b> .
+    </div>
+</body>
+
+</html>
